@@ -59,3 +59,28 @@ Delete Tina Smith's Lead
     ClickText                    Delete
     ClickText                    Close
     VerifyNoText                 Tina Smith
+
+Create Account Growmore
+    [Tags]                        Create A New Account
+    ClickText    Accounts
+    ClickText    New
+    UseModal     On
+    TypeText     Account Name    Growmore
+    PickList     Type            Competitor
+    ClickText    Website
+    TypeText     Website         www.growmore.org
+    ClickText    Phone
+    TypeText     Phone           1234567890
+    PickList     Industry        Banking
+    ClickText    Employees
+    TypeText     Employees       100
+    ClickText    Save            partial_match=false
+    UseModal     Off
+
+    ClickText                 Details                    anchor=Related
+    VerifyText               Growmore
+    VerifyText               Growmore                    anchor=Account Name
+    VerifyField               Phone                       (123) 456-7890
+    VerifyField               Employees                   100
+    VerifyField               Website                     www.growmore.org
+    VerifyField               Industry                    Banking
