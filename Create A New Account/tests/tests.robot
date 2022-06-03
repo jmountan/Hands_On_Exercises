@@ -64,6 +64,7 @@ Create Account Growmore
     [Tags]                        Create A New Account
     ClickText    Accounts
     ClickText    New
+    Sleep        5s
     UseModal     On
     TypeText     Account Name    Growmore
     PickList     Type            Competitor
