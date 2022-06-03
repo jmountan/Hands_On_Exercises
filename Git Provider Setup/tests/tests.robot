@@ -50,7 +50,7 @@ Delete Tina Smith's Lead
     [tags]                    Lead                        Git Repo Exercise
     LaunchApp                 Sales
     ClickText                 Leads
-    Sleep                     30s
+    Sleep                     10s
 
     
     ClickText                    Tina Smith    timeout=3
