@@ -64,10 +64,7 @@ Delete Tina Smith's Lead
 
 Create Account Growmore
     [Tags]                        Account                Custom Keyword
-    LaunchApp                     Sales
-    ClickText                     Accounts
-    ClickText                     New
-    UseModal                      On
+    Appstate                      Start New Account
 
     #Create a unique name for the account
     ${currentTimestamp}=          Get Current Date
