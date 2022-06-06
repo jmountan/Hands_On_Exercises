@@ -62,21 +62,21 @@ Delete Tina Smith's Lead
 
 Create Account Growmore
     [Tags]                        Create A New Account
-    ClickText    Accounts
-    ClickText    New
-    Sleep        5s
-    UseModal     On
-    TypeText     Account Name    Growmore
-    PickList     Type            Competitor
-    ClickText    Website
-    TypeText     Website         www.growmore.org
-    ClickText    Phone
-    TypeText     Phone           1234567890
-    PickList     Industry        Banking
-    ClickText    Employees
-    TypeText     Employees       100
-    ClickText    Save            partial_match=false
-    UseModal     Off
+    LaunchApp                     Sales
+    ClickText                     Accounts
+    ClickText                     New
+    UseModal                      On
+    TypeText                      Account Name    Growmore
+    PickList                      Type            Competitor
+    ClickText                     Website
+    TypeText                      Website         www.growmore.org
+    ClickText                     Phone
+    TypeText                      Phone           1234567890
+    PickList                      Industry        Banking
+    ClickText                     Employees
+    TypeText                      Employees       100
+    ClickText                     Save            partial_match=false
+    UseModal                      Off
 
     ClickText                 Details                    anchor=Related
     VerifyText               Growmore
