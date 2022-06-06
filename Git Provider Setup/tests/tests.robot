@@ -6,12 +6,12 @@ Suite Teardown                End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]                    Lead                        Git Repo Exercise
+    [tags]                    Lead                        Create A New Account
     Appstate                  Home
     LaunchApp                 Sales
 
     ClickText                 Leads
-    ClickText                 New
+    ClickText                 New                        anchor=Import
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
 
@@ -47,13 +47,12 @@ Entering A Lead
     VerifyText                Growmore
 
 Delete Tina Smith's Lead
-    [tags]                    Lead                        Git Repo Exercise
+    [tags]                    Lead                        Create A New Account
     LaunchApp                 Sales
     ClickText                 Leads
-    Sleep                     10s
-
+    Sleep                     2 sec
     
-    ClickText                    Tina Smith    timeout=3
+    Wait Until Keyword Succeeds   1 min   5 sec   ClickText    Tina Smith
     ClickText                    Show more actions
     ClickText                    Delete
     ClickText                    Delete
