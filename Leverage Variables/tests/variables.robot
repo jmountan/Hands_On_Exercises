@@ -1,5 +1,7 @@
 *** Settings ***
 Resource                      ../resources/common.robot
+Library                       String
+Library                       DateTime
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 
