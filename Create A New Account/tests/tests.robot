@@ -61,7 +61,7 @@ Delete Tina Smith's Lead
     VerifyNoText                 Tina Smith
 
 Create Account Growmore
-    [Tags]                        Create A New Account
+    [Tags]                        Account                  Create A New Account
     LaunchApp                     Sales
     ClickText                     Accounts
     ClickText                     New
