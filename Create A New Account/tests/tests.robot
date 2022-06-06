@@ -64,7 +64,7 @@ Create Account Growmore
     ClickText                     Accounts
     ClickText                     New
     UseModal                      On
-    TypeText                      Account Name    Growmore
+    Wait Until Keyword Succeeds   1 min   5 sec   TypeText   Account Name    Growmore
     PickList                      Type            Competitor
     ClickText                     Website
     TypeText                      Website         www.growmore.org
