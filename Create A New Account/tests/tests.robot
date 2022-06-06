@@ -51,7 +51,7 @@ Delete Tina Smith's Lead
     LaunchApp                 Sales
     ClickText                 Leads
     
-    ClickUntil                    Tina Smith
+    ClickUntil                   Recently Viewed           Tina Smith
     ClickText                    Show more actions
     ClickText                    Delete
     ClickText                    Delete
