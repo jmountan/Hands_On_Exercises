@@ -11,6 +11,7 @@ Entering A Lead
     LaunchApp                 Sales
 
     ClickText                 Leads
+    Sleep                     1 sec
     ClickText                 New                        anchor=Import
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
