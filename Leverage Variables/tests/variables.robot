@@ -68,8 +68,14 @@ Create Account Growmore
     ClickText                     Accounts
     ClickText                     New
     UseModal                      On
+
+    #Create a unique name for the account
+    ${currentTimestamp}=          Get Current Date
+    ${genericName}=               Convert To String      Growmore
+    ${uniqueAccountName}=         Catenate               ${currentTimestamp}    ${genericName}
+
     Sleep                         1 sec
-    Wait Until Keyword Succeeds   1 min   5 sec   TypeText   Account Name    Growmore
+    Wait Until Keyword Succeeds   1 min   5 sec   TypeText   Account Name    ${uniqueAccountName}
     PickList                      Type            Competitor
     ClickText                     Website
     TypeText                      Website         www.growmore.org
@@ -82,8 +88,8 @@ Create Account Growmore
     UseModal                      Off
 
     ClickText                 Details                    anchor=Related
-    VerifyText               Growmore
-    VerifyText               Growmore                    anchor=Account Name
+    VerifyText               ${uniqueAccountName}
+    VerifyText               ${uniqueAccountName}                    anchor=Account Name
     VerifyField               Phone                       (123) 456-7890
     VerifyField               Employees                   100
     VerifyField               Website                     www.growmore.org
