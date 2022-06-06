@@ -11,6 +11,11 @@ ${home_url}               ${login_url}/lightning/page/home
 
 
 *** Keywords ***
+Start New Account
+    LaunchApp                     Sales
+    ClickText                     Accounts
+    ClickText                     New
+    UseModal                      On
 Setup Browser
     Open Browser          about:blank                 ${BROWSER}
     SetConfig             LineBreak                   ${EMPTY}               #\ue000
