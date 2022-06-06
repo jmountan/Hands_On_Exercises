@@ -11,7 +11,7 @@ Entering A Lead
     LaunchApp                 Sales
 
     ClickText                 Leads
-    ClickText                 New
+    ClickText                 New                        anchor=Import
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
 
@@ -50,10 +50,8 @@ Delete Tina Smith's Lead
     [tags]                    Lead                        Create A New Account
     LaunchApp                 Sales
     ClickText                 Leads
-    Sleep                     10s
-
     
-    ClickText                    Tina Smith    timeout=3
+    ClickUntil                    Tina Smith
     ClickText                    Show more actions
     ClickText                    Delete
     ClickText                    Delete
