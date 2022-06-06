@@ -50,6 +50,7 @@ Delete Tina Smith's Lead
     [tags]                    Lead                        Create A New Account
     LaunchApp                 Sales
     ClickText                 Leads
+    Sleep                     2 sec
     
     Wait Until Keyword Succeeds   1 min   5 sec   ClickText    Tina Smith
     ClickText                    Show more actions
@@ -64,6 +65,7 @@ Create Account Growmore
     ClickText                     Accounts
     ClickText                     New
     UseModal                      On
+    Sleep                         1 sec
     Wait Until Keyword Succeeds   1 min   5 sec   TypeText   Account Name    Growmore
     PickList                      Type            Competitor
     ClickText                     Website
