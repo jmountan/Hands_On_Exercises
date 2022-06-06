@@ -6,7 +6,7 @@ Suite Teardown                End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]                    Lead                        Create A New Account
+    [tags]                    Lead                        Leveraging Variables
     Appstate                  Home
     LaunchApp                 Sales
 
@@ -48,7 +48,7 @@ Entering A Lead
     VerifyText                Growmore
 
 Delete Tina Smith's Lead
-    [tags]                    Lead                        Create A New Account
+    [tags]                    Lead                        Leveraging Variables
     LaunchApp                 Sales
     ClickText                 Leads
     Sleep                     2 sec
@@ -61,7 +61,7 @@ Delete Tina Smith's Lead
     VerifyNoText                 Tina Smith
 
 Create Account Growmore
-    [Tags]                        Create A New Account
+    [Tags]                        Account                Leveraging Variables
     LaunchApp                     Sales
     ClickText                     Accounts
     ClickText                     New
