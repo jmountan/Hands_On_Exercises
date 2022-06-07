@@ -50,6 +50,7 @@ Check Our Story
     [Tags]             Solution
     [Documentation]    VerifyText on Ava Sandler and Steph Poco in the /about/ page
     Appstate           Home
+    ClickText          Our Story                                            #<--- We needed to navigate to the "our story" page somehow
     VerifyText         Ava Sandler
     VerifyText         Steph Poco
     VerifyText         Passion
@@ -62,7 +63,7 @@ Start payment info
     Appstate           Home   
     ClickText          shopping_cart
     ClickText          Checkout
-    TypeText           Tina Smith            Full name
+    TypeText           Full name             Tina Smith                   #<--- We had the arguments reversed! We were accidentally typing "Full name" into the field "Tina Smith"
     TypeText           Email                 Tina.Smith@growmore.com   
     
     ClickText          I don't see my address    
