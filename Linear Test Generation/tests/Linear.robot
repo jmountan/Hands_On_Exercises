@@ -6,7 +6,7 @@ Suite Teardown                End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]                    Lead    testgen    linear    numtests=3
+    [tags]                    Lead    testgen    linear    numtests=3    Linear Generation
     Appstate                  Home
     LaunchApp                 Sales
 
@@ -48,7 +48,7 @@ Entering A Lead
     VerifyText                Growmore
 
 Delete Tina Smith's Lead
-    [tags]                    Lead    testgen    numtests=3
+    [tags]                    Lead    testgen    numtests=3    Linear Generation
     LaunchApp                 Sales
     ClickText                 Leads
     Sleep                     1
