@@ -23,11 +23,13 @@ Suite Teardown          Close All Browsers
 #      spaces, followed by a QWord, at least four spaces, and its arguments.
 
 Test the home page
+    [Tags]              Broken
     [Documentation]     Go to the web shop, and verify that the slogan text appears on the page.
     GoTo                https://qentinelqi.github.io/shop/
     VerifyText          Find your spirit animal
 
 Check the navigation menu items
+    [Tags]              Broken
     [Documentation]     Go to the shop homepage and verify the menu items.
     GoTo                https://qentinelqi.github.io/shop/
     VerifyText          Products
@@ -35,6 +37,7 @@ Check the navigation menu items
     VerifyText          Contact
 
 Shop for products
+    [Tags]              Broken
     [Documentation]     Select the "Sacha the Deer" product to add to cart and confirm its in the cart, verify details on the page,
     ...                 add the product to the cart and continue shopping.
     GoTo                https://qentinelqi.github.io/shop/
@@ -55,6 +58,7 @@ Shop for products
 #          states could be defined as needed.
 
 Continue shopping
+    [Tags]              Broken
     [Documentation]     Now add "Gavin the Tiger" to the cart and confirm its in the cart.
     AppState            Home
     ClickText           Gavin the Tiger
@@ -66,6 +70,7 @@ Continue shopping
     VerifyText          Fur, Inc.
 
 Check Our Story
+    [Tags]              Broken
     [Documentation]    VerifyText on Ava Sandler and Steph Poco in the /about/ page
     Appstate           Home
     VerifyText         Ava Sandler
@@ -75,6 +80,7 @@ Check Our Story
     VerifyText         Style
 
 Start payment info
+    [Tags]              Broken
     [Documentation]    Start filling out the payment info. We will only fill out a fake name, email, and address After that the test is done.
     Appstate           Home   
     ClickText          shopping_cart
