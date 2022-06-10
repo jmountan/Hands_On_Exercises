@@ -39,10 +39,9 @@ Entering A Lead With Data
     LaunchApp                 Sales
     ClickText                 Leads
 
-    ${fullName}=              Catenate                    ${First Name}    ${Last Name}
-
-    ClickText                 ${fullName}
+    ClickText                 ${first Name}
     ClickText                 Delete
     ClickText                 Delete
     VerifyText                Recently Viewed
-    VerifyNoText              ${fullName}
+    VerifyNoText              ${First Name}
+    VerifyNoText              ${Last Name}
