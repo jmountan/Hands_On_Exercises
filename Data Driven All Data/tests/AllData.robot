@@ -18,7 +18,6 @@ Entering A Lead With Data
     LaunchApp                 Sales
 
     ClickText                 Leads
-    VerifyText                Change Owner
     ClickText                 New
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
