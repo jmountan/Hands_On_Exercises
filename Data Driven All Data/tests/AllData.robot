@@ -4,16 +4,20 @@ Library                       DataDriver    reader_class=TestDataApi    name=Lea
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 Test Template                 Entering A Lead With Data
+Test Template                 Delete A Lead With Data
 
 *** Test Cases ***
 Entering A Lead With Data with ${First Name}    ${Last Name}    ${Phone}    ${Company}    ${Website}
+    [Tags]                    AllData
+
+Delete A Lead With Data with ${First Name}    ${Last Name}    ${Phone}    ${Company}    ${Website}
     [Tags]                    AllData
 
 *** Keywords ***
 Entering A Lead With Data
     [Arguments]               ${First Name}    ${Last Name}    ${Phone}    ${Company}    ${Website}
     [tags]                    Lead
-    Appstate                  Home
+    Home
     LaunchApp                 Sales
     LaunchApp                 Sales
 
@@ -33,3 +37,16 @@ Entering A Lead With Data
     ClickText                 Save                        partial_match=False
     UseModal                  Off
     Sleep                     1
+
+Delete A Lead With Data]
+    [Arguments]               ${First Name}    ${Last Name}
+    LaunchApp                 Sales
+    ClickText                 Leads
+
+    ${fullName}=              Catenate                    ${First Name}    ${Last Name}
+
+    ClickText                 ${fullName}
+    ClickText                 Delete
+    ClickText                 Delete
+    VerifyText                Recently Viewed
+    VerifyNoText              ${fullName}
