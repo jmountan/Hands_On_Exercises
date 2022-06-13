@@ -4,7 +4,6 @@ Library                       DataDriver    reader_class=TestDataApi    name=Lea
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 Test Template                 Entering A Lead With Data
-Test Template                 Delete A Lead With Data
 
 *** Test Cases ***
 Entering A Lead With Data with ${First Name}    ${Last Name}    ${Phone}    ${Company}    ${Website}
@@ -38,6 +37,7 @@ Entering A Lead With Data
     #Delete the lead to clean up data
     LaunchApp                 Sales
     ClickText                 Leads
+    VerifyText                Recently Viewed             timeout=120s
 
     ClickText                 ${first Name}
     ClickText                 Delete
