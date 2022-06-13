@@ -12,7 +12,7 @@ Entering A Lead
 
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
-    ClickText                 Working
+    ClickText                 New
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
 
