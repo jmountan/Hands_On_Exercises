@@ -11,6 +11,7 @@ Entering A Lead
     LaunchApp                 Sales
 
     ClickText                 Leads
+    VerifyText                Recently Viewed             timeout=120s
     ClickText                 New
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
@@ -31,7 +32,7 @@ Delete A Lead
     [tags]                    Lead                        SingleDataPoint
     LaunchApp                 Sales
     ClickText                 Leads
-    VerifyText                Recently Viewed
+    VerifyText                Recently Viewed             timeout=120s
 
     ${fullName}=              Catenate                    ${First Name}    ${Last Name}
 
