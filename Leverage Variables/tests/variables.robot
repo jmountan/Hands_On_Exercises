@@ -21,7 +21,7 @@ Entering A Lead
     Picklist                  Salutation                  Ms.
     TypeText                  First Name                  Tina
     TypeText                  Last Name                   Smith
-    Picklist                  Lead Status                 New
+    Picklist                  Lead Status                 Working
     TypeText                  Phone                       +12234567858449             First Name
     TypeText                  Company                     Growmore                    Last Name
     TypeText                  Title                       Manager                     Address Information
