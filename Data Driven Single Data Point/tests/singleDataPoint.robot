@@ -31,6 +31,7 @@ Delete A Lead
     [tags]                    Lead                        SingleDataPoint
     LaunchApp                 Sales
     ClickText                 Leads
+    VerifyText                Recently Viewed
 
     ${fullName}=              Catenate                    ${First Name}    ${Last Name}
 
