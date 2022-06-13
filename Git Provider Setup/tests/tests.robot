@@ -11,7 +11,7 @@ Entering A Lead
     LaunchApp                 Sales
 
     ClickText                 Leads
-    Sleep                     1 sec
+    VerifyText                Recently Viewed             timeout=120s
     ClickText                 New                        anchor=Import
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
@@ -51,7 +51,7 @@ Delete Tina Smith's Lead
     [tags]                    Lead                        Git Repo Exercise
     LaunchApp                 Sales
     ClickText                 Leads
-    Sleep                     2 sec
+    VerifyText                Recently Viewed             timeout=120s
     
     Wait Until Keyword Succeeds   1 min   5 sec   ClickText    Tina Smith
     ClickText                    Show more actions
