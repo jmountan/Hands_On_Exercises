@@ -6,7 +6,7 @@ Suite Teardown                End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]                    Lead
+    [tags]                    Lead                        SingleDataPoint
     Appstate                  Home
     LaunchApp                 Sales
 
@@ -28,7 +28,7 @@ Entering A Lead
     Sleep                     1
     
 Delete A Lead
-    [tags]                    Lead
+    [tags]                    Lead                        SingleDataPoint
     LaunchApp                 Sales
     ClickText                 Leads
 
