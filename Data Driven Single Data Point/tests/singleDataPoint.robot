@@ -1,0 +1,41 @@
+*** Settings ***
+Resource                      ../resources/common.robot
+Library                       String
+Suite Setup                   Setup Browser
+Suite Teardown                End suite
+
+*** Test Cases ***
+Entering A Lead
+    [tags]                    Lead
+    Appstate                  Home
+    LaunchApp                 Sales
+
+    ClickText                 Leads
+    ClickText                 New
+    VerifyText                Lead Information
+    UseModal                  On                          # Only find fields from open modal dialog
+
+    TypeText                  First Name                  ${First Name}
+    TypeText                  Last Name                   ${Last Name}
+    Picklist                  Lead Status                 New
+    TypeText                  Phone                       ${Phone}                    First Name
+    TypeText                  Company                     ${Company}                  Last Name
+    TypeText                  Website                     ${Website}
+
+    Picklist                  Lead Source                 Partner
+    ClickText                 Save                        partial_match=False
+    UseModal                  Off
+    Sleep                     1
+    
+Delete A Lead
+    [tags]                    Lead
+    LaunchApp                 Sales
+    ClickText                 Leads
+
+    ${fullName}=              Catenate                    ${First Name}    ${Last Name}
+
+    ClickText                 ${fullName}
+    ClickText                 Delete
+    ClickText                 Delete
+    VerifyText                Recently Viewed
+    VerifyNoText              ${fullName}
