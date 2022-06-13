@@ -18,6 +18,7 @@ Entering A Lead With Data
     LaunchApp                 Sales
 
     ClickText                 Leads
+    VerifyText                Recently Viewed             timeout=120s
     ClickText                 New
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
