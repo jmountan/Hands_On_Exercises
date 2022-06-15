@@ -26,8 +26,7 @@ Entering A Lead
     TypeText                  Email                       tina.smith@gmail.com        Rating
     TypeText                  Website                     https://www.growmore.com/
 
-    ClickText                 Lead Source
-    Picklist                  Lead Source                 Partner
+    PickList                  Lead Source                 Advertisement
     ClickText                 Save                        partial_match=False
     UseModal                  Off
     Sleep                     2
