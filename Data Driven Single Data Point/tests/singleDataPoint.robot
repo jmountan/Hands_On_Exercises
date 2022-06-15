@@ -23,7 +23,8 @@ Entering A Lead
     TypeText                  Company                     ${Company}                  Last Name
     TypeText                  Website                     ${Website}
 
-    Picklist                  Lead Source                 Partner
+    ClickText                 Lead Source
+    ClickText                 Advertisement
     ClickText                 Save                        partial_match=False
     UseModal                  Off
     Sleep                     1
