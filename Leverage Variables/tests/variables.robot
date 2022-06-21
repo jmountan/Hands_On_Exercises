@@ -90,7 +90,7 @@ Create Account Growmore
 
     ClickText                 Details                    anchor=Related
     VerifyText               ${uniqueAccountName}
-    VerifyText               ${uniqueAccountName}                    anchor=Account Name
+    VerifyText               ${uniqueAccountName}                    anchor=Account Name        timeout=60s
     VerifyField               Phone                       (123) 456-7890
     VerifyField               Employees                   100
     VerifyField               Website                     www.growmore.org
