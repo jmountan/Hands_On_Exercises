@@ -1,6 +1,6 @@
 from robot.api import logger
 
-class my_custom_library():
+class pyLib():
 
     def print_message(self, message):
 
