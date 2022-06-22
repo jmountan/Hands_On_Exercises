@@ -8,4 +8,4 @@ class pyLib():
 
         """
 
-        logger.info(message)
+        logger.warn(message)
