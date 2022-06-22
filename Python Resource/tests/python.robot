@@ -6,7 +6,7 @@ Suite Teardown                End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]                    Lead                        Git Repo Exercise
+    [tags]                    Lead                        Python Exercise
     Appstate                  Home
     LaunchApp                 Sales
 
@@ -49,7 +49,7 @@ Entering A Lead
     VerifyText                Growmore
 
 Delete Tina Smith's Lead
-    [tags]                    Lead                        Git Repo Exercise
+    [tags]                    Lead                        Python Exercise
     LaunchApp                 Sales
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
