@@ -10,7 +10,7 @@ Entering A Lead
     [tags]                    Lead                        Python Exercise
     Appstate                  Home
     LaunchApp                 Sales
-
+    Print Message             Hello From PyLib!!!!
 
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
