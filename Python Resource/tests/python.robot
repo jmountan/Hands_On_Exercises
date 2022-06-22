@@ -1,5 +1,6 @@
 *** Settings ***
 Resource                      ../resources/common.robot
+Library                      ../resources/pyLib.py
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 
@@ -9,6 +10,7 @@ Entering A Lead
     [tags]                    Lead                        Python Exercise
     Appstate                  Home
     LaunchApp                 Sales
+
 
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
