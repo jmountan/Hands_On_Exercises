@@ -15,8 +15,21 @@ Perform Demo With Python
     Print Message             That's what we are using right now to print to the console!!
     Print Message             What about other Python libraries?
     Print Message             No problem! We simply install those libraries in our pace.before
-    Print Message             For this example we will use Numpy
-    
+    Print Message             For this example we will use Numpy. We have a basic set of functions defined
+
+    Print Message             Let's start with a base number of 100
+    ${temp}=                  Squareroot Base
+    log                       ${temp}    level=warn
+    ${temp}=                  Double Base
+    log                       ${temp}    level=warn
+    ${temp}=                  Sum Base    1234
+    log                       ${temp}    level=warn
+    ${temp}=                  Halve Base
+    log                       ${temp}    level=warn
+    ${temp}=                  Sum Base    -200
+    log                       ${temp}    level=warn
+
+
 Entering A Lead
     [tags]                    Lead                        Python Exercise
     Appstate                  Home
