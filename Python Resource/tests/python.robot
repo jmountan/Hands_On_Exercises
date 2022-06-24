@@ -6,11 +6,21 @@ Suite Teardown                End suite
 
 
 *** Test Cases ***
+
+Perform Demo With Python
+    [Tags]                    Python Exercise
+    Print Message             Hello from Python!
+    Print Message             Let's explore our ability to leverage Python within CRT
+    Print Message             We have a native package for CRT called robot.api.
+    Print Message             That's what we are using right now to print to the console!!
+    Print Message             What about other Python libraries?
+    Print Message             No problem! We simply install those libraries in our pace.before
+    Print Message             For this example we will use Numpy
+    
 Entering A Lead
     [tags]                    Lead                        Python Exercise
     Appstate                  Home
     LaunchApp                 Sales
-    Print Message             Hello From PyLib!!!!
 
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
