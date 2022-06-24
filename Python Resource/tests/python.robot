@@ -9,6 +9,7 @@ Suite Teardown                End suite
 
 Perform Demo With Python
     [Tags]                    Python Exercise
+    
     Print Message             Hello from Python!
     Print Message             Let's explore our ability to leverage Python within CRT
     Print Message             We have a native package for CRT called robot.api.
@@ -18,15 +19,15 @@ Perform Demo With Python
     Print Message             For this example we will use Numpy. We have a basic set of functions defined
 
     Print Message             Let's start with a base number of 100
-    ${temp}=                  Squareroot Base
+    ${temp}=                  Squareroot    100
     log                       ${temp}    level=warn
-    ${temp}=                  Double Base
+    ${temp}=                  Double     100
     log                       ${temp}    level=warn
-    ${temp}=                  Sum Base    1234
+    ${temp}=                  Sum        100    50
     log                       ${temp}    level=warn
-    ${temp}=                  Halve Base
+    ${temp}=                  Halve      100
     log                       ${temp}    level=warn
-    ${temp}=                  Sum Base    -200
+    ${temp}=                  Sum        100    -200
     log                       ${temp}    level=warn
 
 
