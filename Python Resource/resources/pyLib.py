@@ -11,22 +11,22 @@ class pyLib():
 
         logger.warn(message)
     
-    def squareroot(self, baseNum):
+    def squareroot(self, float(baseNum)):
         newNum = numpy.sqrt(baseNum)
         logger.warn("%s calculated to %s" %(baseNum,newNum))
         return newNum
 
-    def double(self, baseNum):
+    def double(self, float(baseNum)):
         newNum = numpy.multiply(baseNum, 2.0)
         logger.warn("%s calculated to %s" %(baseNum,newNum))
         return newNum
     
-    def halve(self, baseNum):
+    def halve(self, float(baseNum)):
         newNum = numpy.divide(baseNum,2.0)
         logger.warn("%s calculated to %s" %(baseNum,newNum))
         return newNum
 
-    def sum(self, baseNum, number):
+    def sum(self, float(baseNum), float(number)):
         newNum = numpy.add(baseNum, number)
         logger.warn("%s calculated to %s" %(baseNum,newNum))
         return newNum
