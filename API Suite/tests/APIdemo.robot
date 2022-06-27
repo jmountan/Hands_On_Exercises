@@ -8,7 +8,7 @@ Suite Teardown                End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]                    Lead                        Custom Keyword
+    [tags]                    Lead                        API Suite
     Appstate                  Home
     LaunchApp                 Sales
 
@@ -51,7 +51,7 @@ Entering A Lead
     VerifyText                Growmore
 
 Delete Tina Smith's Lead
-    [tags]                    Lead                        Custom Keyword
+    [tags]                    Lead                        API Suite
     LaunchApp                 Sales
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
@@ -64,7 +64,7 @@ Delete Tina Smith's Lead
     VerifyNoText                 Tina Smith
 
 Create Account Growmore
-    [Tags]                        Account                Custom Keyword
+    [Tags]                        Account                API Suite
     Appstate                      Start New Account
 
     #Create a unique name for the account
