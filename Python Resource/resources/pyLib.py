@@ -30,7 +30,7 @@ class pyLib():
         return newNum
 
     def sum(self, baseNum, number):
-        logger.warn("Summming the values of %s and %s" %(baseNum,newNum))
+        logger.warn("Summming the values of %s and %s" %(baseNum,number))
         newNum = numpy.add(float(baseNum), float(number))
         logger.warn("%s calculated to %s" %(baseNum,newNum))
         return newNum
