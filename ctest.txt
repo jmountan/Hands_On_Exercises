@@ -1,0 +1,3 @@
+-v username:ctest-pxmx@force.com
+-v password:CRT_T3ST
+-v url:https://copadoinc.my.salesforce.com
