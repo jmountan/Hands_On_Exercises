@@ -8,6 +8,7 @@ Suite Teardown                  End suite
 *** Test Cases ***
 Create Account Growmore
     [Tags]                      Account                     Leveraging Variables
+    Appstate                    Home
     LaunchApp                   Sales
     ClickText                   Accounts
     ClickText                   New
