@@ -2,6 +2,7 @@
 Resource                      ../Resources/common.robot
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
+Library                       FakerLibrary
 
 
 *** Test Cases ***
@@ -48,7 +49,7 @@ Entering A Lead
     VerifyText                Manager
     VerifyText                Growmore
 
-Delete Tina Smith's Lead
+Delete Created Lead
     [tags]                    Lead                        Git Repo Exercise
     LaunchApp                 Sales
     ClickText                 Leads
