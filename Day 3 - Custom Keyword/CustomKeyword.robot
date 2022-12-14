@@ -9,6 +9,7 @@ Suite Teardown               End suite
 *** Test Cases ***
 Create Account Growmore
     [Tags]                   Account                     Custom Keyword
+    Appstate                 Home
     ${uniqueAccountName}=    Start New Account           Growmore               Get Current Date
 
     PickList                 Type                        Competitor
