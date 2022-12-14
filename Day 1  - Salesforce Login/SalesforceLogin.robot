@@ -4,7 +4,6 @@ Suite Setup                   Setup Browser
 Suite Teardown                End suite
 Library                       FakerLibrary
 
-
 *** Test Cases ***
 Entering A Lead
     [tags]                    Lead                        Salesforce Login
@@ -22,6 +21,8 @@ Entering A Lead
     #We will create a new lead using randomly generated Data (This is done via FakerLibrary).
     ${firstname}=             FakerLibrary.firstname
     ${lastname}=              FakerLibrary.lastname
+    Set Suite Variable        ${firstname}
+    Set Suite Variable        ${lastname}
     Picklist                  Salutation                  Ms.
     TypeText                  First Name                  ${firstname}
     TypeText                  Last Name                   ${lastname}
