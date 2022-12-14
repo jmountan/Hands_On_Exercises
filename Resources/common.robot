@@ -41,19 +41,3 @@ Home
     ClickText             Home
     VerifyTitle           Home | Salesforce
 
-Sales App
-    [Documentation]        Navigate to the Sales App
-    Set Library Search Order                          QWeb                   QForce
-    LaunchApp              Sales
-
-# Example of custom keyword with robot fw syntax
-VerifyStage
-    Set Library Search Order                          QWeb                   QForce
-    [Documentation]       Verifies that stage given in ${text} is at ${selected} state; either selected (true) or not selected (false)
-    [Arguments]           ${text}                     ${selected}=true
-    VerifyElement         //a[@title\="${text}" and @aria-checked\="${selected}"]
-
-
-NoData
-    Set Library Search Order                          QWeb                   QForce
-    VerifyNoText          ${data}                     timeout=3                        delay=2
