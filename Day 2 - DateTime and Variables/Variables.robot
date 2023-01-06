@@ -15,7 +15,7 @@ Create Account Growmore
     UseModal                    On
 
     #Create a unique name for the account
-    ${currentTimestamp}=        Get Current Date
+    ${currentTimestamp}=        Get Current Date            result_format=%m-%d%-%y:%H:%M
     ${genericName}=             Convert To String           Growmore
     ${uniqueAccountName}=       Catenate                    ${currentTimestamp}     ${genericName}
 
