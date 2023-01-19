@@ -41,3 +41,6 @@ Home
     ClickText             Home
     VerifyTitle           Home | Salesforce
 
+New Keyword
+    [Arguments]    ${firstname}    ${arg2}
+    #Do Something with ${arg2}
