@@ -40,7 +40,3 @@ Home
     Run Keyword If        ${login_status}             Login
     ClickText             Home
     VerifyTitle           Home | Salesforce
-
-New Keyword
-    [Arguments]    ${firstname}    ${lastname}
-    #Do Something with ${arg2}
