@@ -21,7 +21,7 @@ Setup Browser
 End suite
     Set Library Search Order                          QWeb                   QForce
     Close All Browsers
-
+    ${newVar}                       Set Variable                        1
 
 Login
     [Documentation]       Login to Salesforce instance
