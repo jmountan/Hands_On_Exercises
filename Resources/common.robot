@@ -42,5 +42,5 @@ Home
     VerifyTitle           Home | Salesforce
 
 New Keyword
-    [Arguments]    ${firstname}    ${arg2}
+    [Arguments]    ${firstname}    ${lastname}
     #Do Something with ${arg2}
