@@ -15,7 +15,6 @@ Entering A Lead With Data
     [tags]                    Lead
     Home
     LaunchApp                 Sales
-    LaunchApp                 Sales
 
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
