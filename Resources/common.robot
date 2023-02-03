@@ -17,7 +17,6 @@ Setup Browser
     SetConfig             LineBreak                   ${EMPTY}               #\ue000
     SetConfig             DefaultTimeout              20s                    #sometimes salesforce is slow
 
-
 End suite
     Set Library Search Order                          QWeb                   QForce
     Close All Browsers
