@@ -7,7 +7,8 @@ Suite Teardown      End suite
 *** Test Cases ***
 Entering A Lead
     [tags]          Lead                        FileImport
-    FOR             ${LeadEntry}                IN                          @{LeadList}
+    ${iterator}=    Set Variable                0
+    FOR             ${FirstName}                IN                          @{FirstNames}
         Appstate    Home
         LaunchApp                               Sales
 
@@ -17,12 +18,12 @@ Entering A Lead
         VerifyText                              Lead Information
         UseModal    On                          # Only find fields from open modal dialog
 
-        TypeText    First Name                  ${LeadEntry}[0]
-        TypeText    Last Name                   ${LeadEntry}[1]
+        TypeText    First Name                  ${FirstNames}[${iterator}]
+        TypeText    Last Name                   ${LastNames}[${iterator}]
         Picklist    Lead Status                 Working
-        TypeText    Phone                       ${LeadEntry}[2]             First Name
-        TypeText    Company                     ${LeadEntry}[3]             Last Name
-        TypeText    Website                     ${LeadEntry}[4]
+        TypeText    Phone                       ${Companies}[${iterator}]             First Name
+        TypeText    Company                     ${PhoneNums}[${iterator}]             Last Name
+        TypeText    Website                     ${Websites}[${iterator}]
 
         ClickText                               Lead Source
         ClickText                               Advertisement
