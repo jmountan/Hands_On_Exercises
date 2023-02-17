@@ -36,7 +36,7 @@ Entering A Lead
         ClickText                               Leads
         VerifyText                              Recently Viewed             timeout=120s
 
-        ${fullName}=                            Catenate                    ${LeadEntry}[0]    ${LeadEntry}[1]
+        ${fullName}=                            Catenate                    ${FirstNames}[${iterator}]    ${LastNames}[${iterator}]
 
         ClickText                               ${fullName}
         ClickText                               Delete
