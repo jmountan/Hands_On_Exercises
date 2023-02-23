@@ -30,7 +30,6 @@ Login
     TypeText              Password                    ${password}
     ClickText             Log In
 
-
 Home
     [Documentation]       Navigate to homepage, login if needed
     Set Library Search Order                          QWeb                   QForce
