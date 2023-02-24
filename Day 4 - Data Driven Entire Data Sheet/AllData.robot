@@ -6,12 +6,12 @@ Suite Teardown                End suite
 Test Template                 Entering A Lead With Data
 
 *** Test Cases ***
-Entering A Lead With Data with ${First Name} ${Last Name} ${Phone} ${Company} ${Website}
+Entering A Lead With Data with ${Last Name} ${Phone} ${Company} ${Website} ${First Name}
     [Tags]                    AllData
 
 *** Keywords ***
 Entering A Lead With Data
-    [Arguments]               ${Last Name}    ${Phone}    ${Company}    ${Website}   ${First Name}
+    [Arguments]               ${First Name}   ${Last Name}    ${Phone}    ${Company}    ${Website}
     [tags]                    Lead
     Home
     LaunchApp                 Sales
