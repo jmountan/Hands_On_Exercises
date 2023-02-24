@@ -11,7 +11,7 @@ Entering A Lead With Data with ${Last Name} ${Phone} ${Company} ${Website} ${Fir
 
 *** Keywords ***
 Entering A Lead With Data
-    [Arguments]               ${First Name}   ${Last Name}    ${Phone}    ${Company}    ${Website}
+    [Arguments]               ${First Name1}   ${Last Name1}    ${Phone1}    ${Company1}    ${Website1}
     [tags]                    Lead
     Home
     LaunchApp                 Sales
@@ -22,12 +22,12 @@ Entering A Lead With Data
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
 
-    TypeText                  First Name                  ${First Name}
-    TypeText                  Last Name                   ${Last Name}
+    TypeText                  First Name                  ${First Name1}
+    TypeText                  Last Name                   ${Last Name1}
     Picklist                  Lead Status                 Working
-    TypeText                  Phone                       ${Phone}                    First Name
-    TypeText                  Company                     ${Company}                  Last Name
-    TypeText                  Website                     ${Website}
+    TypeText                  Phone                       ${Phone1}                    First Name
+    TypeText                  Company                     ${Company1}                  Last Name
+    TypeText                  Website                     ${Website1}
 
     ClickText                 Lead Source
     ClickText                 Advertisement
@@ -40,9 +40,9 @@ Entering A Lead With Data
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
 
-    ClickText                 ${first Name}
+    ClickText                 ${first Name1}
     ClickText                 Delete
     ClickText                 Delete
     VerifyText                Recently Viewed
-    VerifyNoText              ${First Name}
-    VerifyNoText              ${Last Name}
+    VerifyNoText              ${First Name1}
+    VerifyNoText              ${Last Name1}
