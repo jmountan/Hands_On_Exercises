@@ -13,6 +13,7 @@ Create Account Growmore
     ClickText                   New
     UseModal                    On
     Sleep                       1 sec
+    
 
     Wait Until Keyword Succeeds                             1 min                   5 sec       TypeText        Account Name    Growmore
     PickList                    Type                        Competitor
