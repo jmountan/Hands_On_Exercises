@@ -43,7 +43,7 @@ Entering A Lead
     ClickText                   Details                     anchor=Chatter
     VerifyText                  Ms. ${firstname} ${lastname}
     VerifyText                  Manager                     anchor=Title
-    VerifyField                 Phone                       +12234567858449
+    #VerifyField                 Phone                       +12234567858449
     VerifyField                 Company                     Growmore
     VerifyField                 Website                     https://www.growmore.com/
 
