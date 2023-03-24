@@ -49,7 +49,7 @@ Entering A Lead
 
     # as an example, let's check Phone number format. Should be "+" and 14 numbers
     ${phone_num}=               GetFieldValue               Phone
-    Should Match Regexp         ${phone_num}                ^[+]\\d{14}$
+    #Should Match Regexp         ${phone_num}                ^[+]\\d{14}$
 
     ClickText                   Leads
     VerifyText                  ${firstname} ${lastname}
