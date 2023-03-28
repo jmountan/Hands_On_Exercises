@@ -7,7 +7,7 @@ Library                         FakerLibrary
 *** Test Cases ***
 Entering A Lead
     [Documentation]             We are entering a lead with random data
-    [tags]                      Lead                        Salesforce Login
+    [tags]                      Lead                        Salesforce Login    Creation
     Appstate                    Home
     LaunchApp                   Sales
 
@@ -39,6 +39,8 @@ Entering A Lead
     ClickText                   Save                        partial_match=False
     UseModal                    Off
     Sleep                       2
+
+
 
     ClickText                   Details                     anchor=Chatter
     VerifyText                  Ms. ${firstname} ${lastname}
