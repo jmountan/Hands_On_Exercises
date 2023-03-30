@@ -5,6 +5,7 @@ Suite Setup         Setup Browser
 Suite Teardown      End suite
 Test Template       Entering A Lead With Data
 
+
 *** Test Cases ***
 Entering A Lead With Data with ${First Name} ${Last Name} ${Phone} ${Company} ${Website}
     [Tags]          AllData
@@ -15,6 +16,9 @@ Entering A Lead With Data
     [tags]          Lead
     Home
     LaunchApp       Sales
+
+    #Comment out when not in live testing
+    # ${FirstName}=                        Set Variable                       Joe Shmoe
 
     ClickText       Leads
     VerifyText      Recently Viewed             timeout=120s
