@@ -5,7 +5,7 @@ Suite Teardown                  End suite
 Library                         FakerLibrary
 
 *** Test Cases ***
-Entering A Lead
+Entering A Lead 
     [Documentation]             We are entering a lead with random data
     [tags]                      Lead                        Salesforce Login    Creation
     Appstate                    Home
