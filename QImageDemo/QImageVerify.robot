@@ -12,4 +12,10 @@ Verify checked icons
     Appstate                    Home
     LaunchApp                   Sales
 
+    
+
+    ClickText    Opportunities
+    ClickText    Growmore-
+    ClickText    Details    partial_match=False
+
    
