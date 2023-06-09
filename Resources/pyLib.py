@@ -1,7 +1,7 @@
 from robot.api import logger
 import numpy
 
-class pyLib:
+class pyLib():
 
     def print_message(self, message):
 
