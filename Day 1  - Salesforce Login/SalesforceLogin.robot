@@ -8,7 +8,7 @@ Library                         FakerLibrary
 Entering A Lead 
     [Documentation]             We are entering a lead with random data
     [tags]                      Lead                        Salesforce Login    Creation
-    Appstate                    Home
+    Appstate                    Home 
     LaunchApp                   Sales
 
     #First we will navigate to the Leads tab in the Sales Application. We will start a new lead from this screen.
