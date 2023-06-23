@@ -7,7 +7,7 @@ Library                         FakerLibrary
 *** Test Cases ***
 Entering A Lead 
     [Documentation]             We are entering a lead with random data
-    [tags]                      Lead                        Salesforce Login    Creation
+    [tags]                      Lead                        Salesforce Login    Creation    Test1    Regression    blocked
     Appstate                    Home 
     LaunchApp                   Sales
 
