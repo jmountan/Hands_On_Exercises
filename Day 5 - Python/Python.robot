@@ -3,6 +3,7 @@ Resource                      ../Resources/common.robot
 Library                      ../Resources/pyLib.py
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
+Variables                    ../Resources/Leads.py
 
 
 *** Test Cases ***
