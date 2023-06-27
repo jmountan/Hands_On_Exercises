@@ -7,8 +7,8 @@ Library                         FakerLibrary
 *** Test Cases ***
 Entering A Lead 
     [Documentation]             We are entering a lead with random data
-    [tags]                      Lead                        Salesforce Login    Creation    Test1    Regression    blocked
-    Appstate                    Home 
+    [tags]                      Lead                        Salesforce Login            Creation               Test1                       Regression    blocked
+    Appstate                    Home
     LaunchApp                   Sales
 
     #First we will navigate to the Leads tab in the Sales Application. We will start a new lead from this screen.
@@ -45,13 +45,13 @@ Entering A Lead
     ClickText                   Details                     anchor=Chatter
     VerifyText                  Ms. ${firstname} ${lastname}
     VerifyText                  Manager                     anchor=Title
-    #VerifyField                 Phone                       +12234567858449
+    #VerifyField                Phone                       +12234567858449
     VerifyField                 Company                     Growmore
     VerifyField                 Website                     https://www.growmore.com/
 
     # as an example, let's check Phone number format. Should be "+" and 14 numbers
     ${phone_num}=               GetFieldValue               Phone
-    #Should Match Regexp         ${phone_num}                ^[+]\\d{14}$
+    #Should Match Regexp        ${phone_num}                ^[+]\\d{14}$
 
     ClickText                   Leads
     VerifyText                  ${firstname} ${lastname}
