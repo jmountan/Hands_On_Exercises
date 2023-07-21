@@ -9,6 +9,7 @@ Entering A Lead
     [tags]                    Lead                        SingleDataPoint
     Appstate                  Home
     LaunchApp                 Sales
+    Log Variables             level=WARN
 
     ClickText                 Leads
     VerifyText                Recently Viewed             timeout=120s
