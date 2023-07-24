@@ -6,7 +6,7 @@ Suite Teardown                  End suite
 
 *** Test Cases ***
 Create Account Growmore
-    [Tags]                      Account                     New Account
+    [Tags]                      Account                     New Account  
     Appstate                    Home
     LaunchApp                   Sales
     ClickText                   Accounts
