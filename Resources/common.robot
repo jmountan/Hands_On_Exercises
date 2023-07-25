@@ -22,7 +22,7 @@ End suite
     Close All Browsers
     ${newVar}                   Set Variable                1
 
-Login
+Login                        
     [Documentation]             Login to Salesforce instance
     Set Library Search Order    QWeb                        QForce
     GoTo                        ${login_url}
@@ -39,3 +39,4 @@ Home
     Run Keyword If              ${login_status}             Login
     ClickText                   Home
     VerifyTitle                 Home | Salesforce
+
